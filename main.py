@@ -3,17 +3,16 @@ from ftplib import FTP
 import subprocess
 
 # FTP server credentials
-ftp_host = '200.55.163.204'
-ftp_user = 'matanzas'
-ftp_pass = 'Puentes1'
+ftp_host = 'HOST'
+ftp_user = 'username'
+ftp_pass = 'pass'
 
-#ftp://matanzas@200.55.163.204/salida/Matanzas/Pronostico_test
 
 # Local directory containing files to upload
-local_dir = '/home/hackroot/Documents/test_folder'
+local_dir = '/home/localusername/local_folder'
 
 # Remote directory to upload files to
-remote_dir = '/salida/Matanzas/Pronostico_test'
+remote_dir = '/FTP_DIR/'
 
 # Connect to FTP server
 ftp = FTP(ftp_host)
